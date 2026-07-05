@@ -28,10 +28,7 @@ jobs:
 
       - name: Install Capacitor & Android tooling
         uses: coturiv/setup-ionic@v2
-        with:
-          cordova: false
-
-      - name: Add Android platform if missing
+     -  - name: Add Android platform if missing
         run: |
           if [ ! -d android ]; then
             npx cap add android
